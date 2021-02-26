@@ -9,6 +9,7 @@
 */
 
 //CODE HERE
+const myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 
 
 ////////////////////PROBLEM 2////////////////////
@@ -21,7 +22,7 @@
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
 //CODE HERE
-
+const foundZ = {};
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -37,7 +38,7 @@ const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
 //CODE HERE
-
+const animals = [];
 
 /*
     Now use the spread operator to make a copy of your animals array.
@@ -45,6 +46,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
+const animalsCopy = [];
 
 
 ////////////////////PROBLEM 4////////////////////
@@ -56,6 +58,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
+
 
   
 ////////////////////PROBLEM 5////////////////////
@@ -97,6 +100,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
+
   
 
 ////////////////////PROBLEM 8////////////////////
@@ -194,7 +198,12 @@ let pairsArray = []
 */
 
 //CODE HERE
-
+function Dog(name, age, breed, tricks) {
+    this.name = name;
+    this.age = age;
+    this.breed = breed;
+    this.tricks = tricks;
+};
 
 /*
     Invoke your dog constructor passing in 'Fido' for the name, 3 for the age, 
@@ -203,6 +212,7 @@ let pairsArray = []
 */
 
 //CODE HERE
+const fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake'])
   
 
 ////////////////////PROBLEM 12////////////////////
@@ -213,6 +223,9 @@ let pairsArray = []
 */
 
 //CODE HERE
+function bark() {
+    return `$(NAME) says bark!`
+}
 
 
 /*
@@ -221,6 +234,7 @@ let pairsArray = []
 */
 
 //CODE HERE
+
   
   
 ////////////////////PROBLEM 13////////////////////
@@ -251,6 +265,9 @@ let pairsArray = []
 */
 
 //CODE HERE
+function dogIntro(treat, toy) {
+    return `$(NAME) is a $(BREED) that loves treat and their toy`
+}
 
 
 /*
@@ -270,6 +287,13 @@ let pairsArray = []
 */
 
 //CODE HERE
+function Phone(brand, model, storage, color, sold) {
+    this.brand = brand
+    this.model = model
+    this.storage = storage
+    this.color = color
+    this.sold = sold    
+}
 
   
 /*
@@ -284,11 +308,11 @@ let pairsArray = []
 */
 
 //CODE HERE
-  // let phone1 = 
+let phone1 = new Phone('Google', 'Pixel 4a 5G', 128, 'black', false)
   
-  // let phone2 = 
+let phone2 = new Phone('Apple', 'Iphone', 256, 'white', false)
   
-  // let phone3 = 
+let phone3 = new Phone('Samsung', 'S10', 256, 'blue', false) 
   
 /*
     Last, add a prototype method to Phone.

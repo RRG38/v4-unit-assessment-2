@@ -251,6 +251,17 @@ const userInfo = {
 */
 
 //CODE HERE
+const person = {
+  name: 'Ryan',
+  age: 31,
+  jobs: ['web dev', 'game dev', 'bot dev'],
+  birthday: '',
+  favorites: {
+    color: 'green',
+    number: 38,
+    book: 'the ascent of money',
+  }
+}
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -276,7 +287,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +300,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
