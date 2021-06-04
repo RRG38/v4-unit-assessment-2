@@ -36,6 +36,9 @@ let foods = [
 */
 
 //CODE HERE
+foods.forEach(function(element, index, array) {
+
+})
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -81,6 +84,9 @@ const products = [
 */
 
 //CODE HERE
+const saleProducts = products.map(function(element, index, array) {
+  
+})
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -91,6 +97,9 @@ const products = [
 */
 
 //CODE HERE
+const blueProducts = saleProducts.filter(function(element, index, array) {
+
+})
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -100,6 +109,9 @@ const products = [
 */
 
 //CODE HERE
+const orderTotal = blueProducts.reduce(function(acc, element, index, array) {
+
+}, 0)
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -130,6 +142,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+const helensInfo = Object.assign(contactInfo, shippingInfo)
 
 ////////////////////PROBLEM 6////////////////////
 /*
